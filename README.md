@@ -1,4 +1,5 @@
- <img src='./Result_Image/firstpage.png' alt='' />
+ <h2> page1 </h2>
+ <img src='public/Result_Image/firstpage.png' alt='sdsad' />
 
 # Getting Started with Create React App
 
