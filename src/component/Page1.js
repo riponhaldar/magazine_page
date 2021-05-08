@@ -56,7 +56,7 @@ const Page1 = () => {
           </Card>
         </Flex_box>
         <Img>
-          <img src='./Image/sadasd.jpg' alt='' />
+          <img src='./Image/page1tow.jpg' alt='stan lee' />
           <p>Stan Lee - First Work. in Captain America Comics (1941)</p>
         </Img>
       </Container>

@@ -10,3 +10,19 @@ font-family: 'PT Sans Narrow', sans-serif; */
   margin: 0;
   box-sizing: border-box;
 }
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+@media (max-width: 991px) {
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
