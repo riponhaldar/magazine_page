@@ -1,11 +1,9 @@
 import './app.css'
-
-import Home from './component/Home'
-
+import Pages from './pages/Pages'
 function App() {
   return (
     <div className='App'>
-      <Home />
+      <Pages />
     </div>
   )
 }

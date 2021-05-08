@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-const Home = () => {
+const Page1 = () => {
   return (
     <>
       <Logo>
@@ -64,7 +64,7 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Page1
 
 export const Logo = styled.div`
   justify-content: center;
@@ -90,7 +90,7 @@ export const Container = styled.div`
   margin-left: auto;
   padding-right: 50px;
   padding-left: 50px;
-  @media screen and(max-width : 991px ) {
+  @media screen and (max-width: 991px) {
     padding-right: 20px;
     padding-left: 20px;
   }
@@ -119,6 +119,14 @@ export const Nav = styled.div`
     letter-spacing: 3px;
     font-size: 1.1rem;
     font-family: 'PT Sans Narrow', sans-serif;
+  }
+  @media screen and (max-width: 991px) {
+    padding: 10px;
+    p {
+      letter-spacing: 3px;
+      font-size: 1rem;
+      font-family: 'PT Sans Narrow', sans-serif;
+    }
   }
 `
 export const Web_link = styled.div`
