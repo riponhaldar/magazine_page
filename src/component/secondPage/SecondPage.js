@@ -30,8 +30,42 @@ const SecondPage = () => {
                 <Right />
               </Page_right>
             </Page_row>
+            <News_flex>
+              <Col>
+                <em>CCTV IN PROGRAMMER</em>
+                <p>this page copy </p>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem totam natus laborum sequi quod repellat?
+                  Tempora recusandae ex aliquid dignissimos molestiae rerum at,
+                  perspiciatis fugiat rem quos asperiores veritatis dolorem.
+                </p>
+              </Col>
+              <Col1>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.ly
+                  sequi Exercitationem totam natus laborum quod repellat? Lorem,
+                  ipsum dolor sit amet consectetur adipisicing elit.ly sequi
+                  Exercitationem totam natus laborum quod repellat? Tempora
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.ly
+                  sequi Exercitationem totam natus laborum quod repellat?
+                </p>
+              </Col1>
+              <Col2>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.ly
+                  Exercitationem totam natus. Italy Exercitationem totam natus.
+                  Exercitationem.
+                </p>
+                <em>CCTV IN THE UK</em>
+                <br />
+                <Italy>
+                  "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+                </Italy>
+                <h3>with mas Shawon</h3>
+              </Col2>
+            </News_flex>
           </PageSection>
-          s
         </Container_Body>
       </div>
     </>
@@ -47,7 +81,7 @@ export const Container_Body = styled.div`
 
 export const PageSection = styled.div`
   /* padding-top: 40px; */
-  padding: 40px 40px;
+  padding: 40px 40px 0px 40px;
   position: relative;
   width: 100%;
   h4 {
@@ -63,7 +97,7 @@ export const Page_row = styled.div`
   display: flex;
   width: 100%;
   padding-top: 20px;
-  @media screen and (max-width: 692px) {
+  @media screen and (max-width: 991px) {
     flex-wrap: wrap;
     flex-direction: column;
   }
@@ -72,16 +106,23 @@ export const Page_row = styled.div`
 export const Page_left = styled.div`
   position: relative;
   width: 69.666%;
-  margin: 0px 10px 60px 0px;
+  margin: 0px 10px 20px 0px;
   img {
     width: 100%;
     /* height: 500px; */
     clip: rect(0px, 60px, 200px, 0px);
   }
+  @media screen and (max-width: 991px) {
+    width: 100%;
+  }
 `
 
 export const Page_right = styled.div`
   width: 30.333%;
+  margin-bottom: 20px;
+  @media screen and (max-width: 991px) {
+    width: 100%;
+  }
 `
 export const Left_text = styled.div`
   text-align: center;
@@ -91,15 +132,6 @@ export const Logo = styled.div`
   background-color: #ffe4c4;
   width: 100%;
   height: 60px;
-  /* font-size: 3rem;
-
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-  text-align: center;
-  margin: 0px 50px;
-  z-index: ; */
-  /* transform: rotate(-20deg); */
-  /* -moz-transform: rotate(-20deg); */
 
   &::after {
     content: 'THE BULLETIN';
@@ -112,16 +144,23 @@ export const Logo = styled.div`
     padding: 0px 60px;
     left: 100px;
     position: absolute;
-    @media screen and (max-width: 992px) {
-      font-size: 3rem;
-      font-weight: 600;
-      /* text-align: center; */
-      border-top: 2px solid black;
-      border-bottom: 2px solid black;
-      transform: rotate(-15deg);
+    @media screen and (max-width: 1134px) {
       padding: 0px 40px;
-      left: 50px;
-      position: absolute;
+      left: 40px;
+    }
+    @media screen and (max-width: 834px) {
+      left: 100px;
+    }
+    @media screen and (max-width: 724px) {
+      font-size: 2.6rem;
+      padding: 0px 40px;
+      left: 70px;
+      /* left: 10%; */
+    }
+    @media screen and (max-width: 632px) {
+      font-size: 1.6rem;
+      padding: 0px 10px;
+      left: 15px;
     }
   }
 `
@@ -144,8 +183,63 @@ export const Privacy_text = styled.p`
   font-size: 3.4rem;
   padding-top: 10px;
   letter-spacing: 8px;
+  @media screen and (max-width: 632px) {
+    font-size: 2rem;
+  }
 `
 export const Privacy_child = styled.p`
   font-size: 0.8rem;
-  padding: 10px;
+  padding: 5px;
+`
+export const News_flex = styled.div`
+  display: flex;
+  /* padding-bottom: 20px; */
+  @media screen and (max-width: 691px) {
+    flex-wrap: wrap;
+  }
+`
+export const Col = styled.div`
+  padding: 0px 10px 20px 0px;
+  text-align: start;
+  width: 1000px;
+  p {
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
+  em {
+    font-size: 1.4rem;
+  }
+  p:nth-child(2) {
+    margin: 10px 0px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    color: red;
+  }
+`
+export const Col1 = styled.div`
+  padding: 0px 10px 20px 0px;
+  text-align: start;
+  width: 1000px;
+
+  p {
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
+`
+export const Col2 = styled.div`
+  padding: 0px 10px 20px 0px;
+  text-align: start;
+  width: 1000px;
+  em {
+    font-size: 1.2rem;
+  }
+  p {
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
+`
+
+export const Italy = styled.p`
+  font-size: 0.9rem;
+  font-style: italic;
 `

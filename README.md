@@ -1,6 +1,7 @@
  <h2> page1 </h2>
  <img src='public/Result_Image/firstpage.png' alt='sdsad' />
-
+ <h2> page2</h2>
+ <img src='public/Result_Image/2ndpage.jpg' alt='2nd page demo' />
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

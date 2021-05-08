@@ -158,6 +158,9 @@ export const Black = styled.div`
 `
 export const Hedding = styled.div`
   padding: 20px 40px 0px 0px;
+  @media screen and (max-width: 1086px) {
+    padding: 10px 10px 0px 0px;
+  }
 `
 export const Para = styled.div`
   border-bottom: 2px solid #000;
@@ -174,5 +177,11 @@ export const Para = styled.div`
   a {
     text-decoration: none;
     color: #a9a9a9;
+  }
+  @media screen and (max-width: 1086px) {
+    padding: 10px 0px;
+    em {
+      font-size: 1.2rem;
+    }
   }
 `
